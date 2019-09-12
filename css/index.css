@@ -253,11 +253,8 @@ footer p {
 	}
 	#main-header, #main-content-header {
 		flex-flow: column-reverse;
-	}
-	#services-boxes, #services-bottom-content {
-		flex-flow: column;
-	}
-	#services-facts-text, #services-info-img, .services-text-box, #main-nav-bar, #content-header {
+    }
+	#main-nav-bar, #content-header {
 		width: 100%;
 	}
 	#services-info-img {
@@ -266,7 +263,7 @@ footer p {
     #main-content-header {
         margin-top: 70px;
     }
-	#header-img-container {
+	#header-img-container, #services-header-img-container, #services-info-img {
 		display: none;
 	}
 }
@@ -276,7 +273,7 @@ footer p {
 	#logo-container {
 		margin-bottom: 20px;
     }
-	#top-content, #bottom-content, #main-nav-bar {
+	#top-content, #bottom-content, #main-nav-bar, #services-boxes, #services-bottom-content {
 		flex-flow: column;
 	}
     #main-nav-bar a {
@@ -292,4 +289,7 @@ footer p {
     #main-content-header {
         margin-top: 50px;
     }
+    #services-facts-text, #services-info-img, .services-text-box {
+		width: 100%;
+	}
 }
