@@ -243,40 +243,15 @@ footer p {
 }
 
 
-/* media queries for tablets */
-@media only screen and (max-width: 800px) {
-	#main-nav-bar {
-		flex-wrap: wrap;
-	}	
-	#logo-container {
-		margin: 25px 0 35px 0;
+/* media queries for mobile */
+@media only screen and (min-width: 1px) and (max-width: 800px) {
+	#top-content, #bottom-content, #main-nav-bar, #services-boxes, #services-bottom-content {
+		flex-flow: column;
 	}
 	#main-header, #main-content-header {
 		flex-flow: column-reverse;
     }
-	#main-nav-bar, #content-header {
-		width: 100%;
-	}
-	#services-info-img {
-		margin-top: 30px;
-    }
-    #main-content-header {
-        margin-top: 70px;
-    }
-	#header-img-container, #services-header-img-container, #services-info-img {
-		display: none;
-	}
-}
-
-/* media queries for mobile */
-@media only screen and (max-width: 500px) {
-	#logo-container {
-		margin-bottom: 20px;
-    }
-	#top-content, #bottom-content, #main-nav-bar, #services-boxes, #services-bottom-content {
-		flex-flow: column;
-	}
-    #main-nav-bar a {
+	#main-nav-bar a {
         font-size: 1.3em;
         text-align: center;
         width: 100%;
@@ -285,11 +260,56 @@ footer p {
     }
     #main-nav-bar a:last-child {
         border-bottom: 1px solid darkgray;
-    }
-    #main-content-header {
-        margin-top: 50px;
-    }
-    #services-facts-text, #services-info-img, .services-text-box {
+	}
+	#header-img-container, #services-header-img-container {
+		display: none;
+	}
+	#services-facts-text, #services-info-img, .services-text-box, #main-header, #main-nav-bar {
 		width: 100%;
+	}
+	#services-info-img {
+		margin-top: 20px;
+	}
+	.text-box {
+		margin: 20px 0;
+	}
+	#top-content {
+		padding-top: 40px;
+	}
+	#middle-content {
+		margin: 20px 0;
+	}
+	#logo-container {
+		margin-bottom: 20px;
+    }
+	#main-content-header {
+        margin-top: 50px;
+	}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+	#main-nav-bar, #services-boxes, #services-bottom-content {
+		flex-flow: row wrap;
+	}
+	#main-nav-bar {
+		width: 100%;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-evenly;
+	}
+	#main-nav-bar a {
+        font-size: 1em;
+        text-align: center;
+        border-top: 0px;
+        padding: 20px 0;
+	}
+	#main-nav-bar a:last-child {
+        border-bottom: 0px;
+	}
+	.services-text-box, #services-info-img, #services-facts-text {
+		width: 48%;
+	}
+	#top-content, #bottom-content {
+		flex-flow: row nowrap;
 	}
 }
