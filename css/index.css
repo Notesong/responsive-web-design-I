@@ -297,8 +297,11 @@ footer p {
 	.container {
 		margin: 20px 40px;
 	}
-	main, footer {
+	main {
 		margin: 0;
+	}
+	footer {
+		margin: 35px 0 0 0;
 	}
 	#main-nav-bar, #services-boxes, #services-bottom-content {
 		flex-flow: row wrap;
