@@ -270,6 +270,12 @@ footer p {
 
 /* media queries for mobile */
 @media only screen and (max-width: 500px) {
+	.container {
+		margin: 0;
+	}
+	main, footer {
+		margin: 20px 40px;
+	}
 	#logo-container {
 		margin-bottom: 20px;
     }
