@@ -245,6 +245,12 @@ footer p {
 
 /* media queries for mobile */
 @media only screen and (min-width: 1px) and (max-width: 800px) {
+	.container {
+		margin: 30px 0 0 0;
+	}
+	main, footer {
+		margin: 20px 40px;
+	}
 	#top-content, #bottom-content, #main-nav-bar, #services-boxes, #services-bottom-content {
 		flex-flow: column;
 	}
@@ -288,6 +294,12 @@ footer p {
 }
 
 @media only screen and (min-width: 501px) and (max-width: 800px) {
+	.container {
+		margin: 20px 40px;
+	}
+	main, footer {
+		margin: 0;
+	}
 	#main-nav-bar, #services-boxes, #services-bottom-content {
 		flex-flow: row wrap;
 	}
